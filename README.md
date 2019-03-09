@@ -21,7 +21,8 @@ http://git.php.net.
 10. Type 'configure --help'
 11. Configure php via configure command
 12. Type 'nmake snap' for the snapshot build, or just 'nmake' for the normal build
-https://wiki.php.net/internals/windows/stepbystepbuild
+<br><a href="https://wiki.php.net/internals/windows/stepbystepbuild"> Original Article </a>
+
 Pull Requests
 =============
 PHP accepts pull requests via github. Discussions are done on github, but
