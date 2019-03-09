@@ -1,0 +1,9 @@
+// $Id$
+// vim:ft=javascript
+
+ARG_ENABLE("bitset", "enable bitset support", "no");
+
+if (PHP_BITSET != "no") {
+	EXTENSION("bitset", "bitset.c");
+}
+

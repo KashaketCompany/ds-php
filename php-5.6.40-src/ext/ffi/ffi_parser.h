@@ -1,0 +1,16 @@
+#define PHP_FFI_TOK_ASTERISK                        1
+#define PHP_FFI_TOK_INTRINSIC                       2
+#define PHP_FFI_TOK_STRUCT                          3
+#define PHP_FFI_TOK_IDENT                           4
+#define PHP_FFI_TOK_CALLBACK                        5
+#define PHP_FFI_TOK_LPAREN                          6
+#define PHP_FFI_TOK_RPAREN                          7
+#define PHP_FFI_TOK_SEMI                            8
+#define PHP_FFI_TOK_COMMA                           9
+#define PHP_FFI_TOK_EQUALS                         10
+#define PHP_FFI_TOK_STRING                         11
+#define PHP_FFI_TOK_LSQUARE                        12
+#define PHP_FFI_TOK_RSQUARE                        13
+#define PHP_FFI_TOK_TYPEDEF                        14
+#define PHP_FFI_TOK_LBRACE                         15
+#define PHP_FFI_TOK_RBRACE                         16

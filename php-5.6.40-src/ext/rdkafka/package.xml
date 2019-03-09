@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0" packagerversion="1.10.1">
+ <name>rdkafka</name>
+ <summary>Kafka client based on librdkafka</summary>
+ <description>This extension is a librdkafka binding providing a working client for Kafka 0.8, 0.9, 0.10
+ </description>
+ <maintainers>
+  <maintainer>
+   <user>lbarnaud</user>
+   <name>Arnaud Le Blanc</name>
+   <email>arnaud.lb@gmail.com</email>
+   <role>lead</role>
+  </maintainer>
+  </maintainers>
+ <release>
+  <version>3.0.4</version>
+  <date>2017-08-16</date>
+  <license>MIT License</license>
+  <state>stable</state>
+  <notes>* Fixed destruction order, fixes hangs during RdKafka\Consumer destruction
+* Added RdKafka\Conf::setStatsCb
+  </notes>
+  <deps>
+   <dep type="php" rel="ge" version="5.3.0"/>
+   <dep type="php" rel="le" version="7.99.99"/>
+  </deps>
+  <filelist>
+   <file role="doc" name="examples/consumer.php"/>
+   <file role="doc" name="examples/producer.php"/>
+   <file role="src" name="compat.c"/>
+   <file role="src" name="compat.h"/>
+   <file role="src" name="conf.c"/>
+   <file role="src" name="conf.h"/>
+   <file role="src" name="config.m4"/>
+   <file role="src" name="config.w32"/>
+   <file role="doc" name="CREDITS"/>
+   <file role="src" name="fun.c"/>
+   <file role="src" name="fun.h"/>
+   <file role="src" name="kafka_consumer.c"/>
+   <file role="src" name="kafka_consumer.h"/>
+   <file role="doc" name="LICENSE"/>
+   <file role="src" name="message.c"/>
+   <file role="src" name="message.h"/>
+   <file role="src" name="metadata.c"/>
+   <file role="src" name="metadata.h"/>
+   <file role="src" name="metadata_broker.c"/>
+   <file role="src" name="metadata_broker.h"/>
+   <file role="src" name="metadata_collection.c"/>
+   <file role="src" name="metadata_collection.h"/>
+   <file role="src" name="metadata_partition.c"/>
+   <file role="src" name="metadata_partition.h"/>
+   <file role="src" name="metadata_topic.c"/>
+   <file role="src" name="metadata_topic.h"/>
+   <file role="src" name="php_rdkafka.h"/>
+   <file role="src" name="php_rdkafka_priv.h"/>
+   <file role="src" name="queue.c"/>
+   <file role="src" name="queue.h"/>
+   <file role="src" name="rdkafka.c"/>
+   <file role="doc" name="README.md"/>
+   <file role="src" name="topic.c"/>
+   <file role="src" name="topic.h"/>
+   <file role="src" name="topic_partition.c"/>
+   <file role="src" name="topic_partition.h"/>
+   <file role="src" name="zeval.h"/>
+  </filelist>
+ </release>
+</package>

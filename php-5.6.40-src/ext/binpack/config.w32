@@ -1,0 +1,7 @@
+// $Id$
+// vim:ft=javascript
+
+ARG_ENABLE("binpack", "enable binpack support", "no");
+if ( PHP_BINPACK != "no" ){
+	EXTENSION("binpack", "php_binpack.c");
+}
