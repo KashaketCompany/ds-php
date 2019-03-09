@@ -6,6 +6,22 @@ http://git.php.net.
 
 [![Build Status](https://secure.travis-ci.org/php/php-src.png?branch=master)](http://travis-ci.org/php/php-src)
 
+=======================
+  PHP Building Process
+=======================
+1. Download latest version of php-sdk <a href="http://windows.php.net/downloads/php-sdk/">here</a>
+2. Open in the php-sdk dir command promt, type 'bin\phpsdk_buildtree.bat phpdev' in it (you can replace "phpdev" with whatever do you like)
+3. Copy phpdev/vc9 to phpdev/vc11
+4. Extract this repo *.zip - ped files to the php development dir (phpdev) / vc11 / x86
+5. Open vs2012 x86 native tools command promt
+6. Type 'cd c:\php-sdk', run it
+7. Type 'bin\phpsdk_setvars', run it
+8. Type 'cd phpdev/vc11/x86/php-5.6.40-src'
+9. Type 'buildconf.bat'
+10. Type 'configure --help'
+11. Configure php via configure command
+12. Type 'nmake snap' for the snapshot build, or just 'nmake' for the normal build
+
 Pull Requests
 =============
 PHP accepts pull requests via github. Discussions are done on github, but
