@@ -6,7 +6,7 @@ http://git.php.net.
 
 [![Build Status](https://secure.travis-ci.org/php/php-src.png?branch=master)](http://travis-ci.org/php/php-src)
 
-=======================
+
   PHP Building Process
 =======================
 1. Download latest version of php-sdk <a href="http://windows.php.net/downloads/php-sdk/">here</a>
