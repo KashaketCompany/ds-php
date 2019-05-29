@@ -52,7 +52,11 @@ int php_runkit_fetch_class_int(const char *classname, int classname_len, zend_cl
 	PHP_RUNKIT_DECL_STRING_PARAM(classname_lower)
 
 	/* Ignore leading "\" */
-	PHP_RUNKIT_NORMALIZE_NAMESPACE(classname);
+	if (classname[0] == '\\') {
+		++classname;
+		--classname_len;
+	}
+
 
 	PHP_RUNKIT_MAKE_LOWERCASE_COPY(classname);
 	if (classname_lower == NULL) {

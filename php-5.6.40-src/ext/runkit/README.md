@@ -1,7 +1,7 @@
 Runkit extension for PHP
 ========================
 
-For all those things you.... probably shouldn't have been doing anyway.... but surely do!
+For all those things you.... probably shouldn't have been doing anyway....
 
 ---------------------
 Feel free to support Dmitry Zenovich via PayPal (dzenovich@gmail.com) if Runkit serves you.
@@ -93,13 +93,16 @@ In this example, $foo will be interpolated as 'bar' since that's what you set it
 Certain INI Options which are ordinarily only modifiable in the system php.ini may be passed during instantiation and changed for your subinterpreter as
 well, these options are passed as an associative array to the Runkit_Sandbox constructor and include the following:
 
-| Setting | Comment |
-| ------- | ------- |
-| safe_mode | safe_mode may only be turned on for a Runkit_Sandbox interpreter using this option.  It cannot be turned off, doing so would circumvent the setting specified by your system administrator in the system php.ini. |
-| open_basedir | Like safe_mode, you can only use this setting to make things more restrictive. |
-| allow_url_fopen, allow_url_include | In keeping with safe_mode, these can only be turned off (more restrictive than global environment) |
-| disable_functions | Any function names specified in this coma-delimited list will be disabled IN ADDITION TO already disabled functions |
-| disable_classes | Like disable_functions, this list is in addition to already disabled classes. |
+safe_mode			safe_mode may only be turned on for a Runkit_Sandbox interpreter using this option.  It cannot be turned off, doing so would
+					circumvent the setting specified by your system administrator in the system php.ini.
+
+open_basedir		Like safe_mode, you can only use this setting to make things more restrictive.
+
+allow_url_fopen		In keeping with safe_mode, this can only be turned off (more restrictive than global environment)
+
+disable_functions	Any function names specified in this coma-delimited list will be disabled IN ADDITION TO already disabled functions.
+
+disable_classes		Like disable_functions, this list is in addition to already disabled classes.
 
 Sandboxing is ONLY AVAILABLE in PHP 5.1 (release version, or snapshot dated after April 28th, 2005) when thread safety has been enabled.  To enable
 thread safety, just make sure that --enable-maintainer-zts is specified on your ./configure line.  This doesn't necessarily mean that your SAPI will use
@@ -118,12 +121,7 @@ Then just rebuild using the --enable-maintainer-zts option specified above.
 
 runkit_lint() and runkit_lint_file() also exist as a simpler approach to verifying the syntactic legality of passed code within an isolated environment.
 
-## BUILDING AND INSTALLING LATEST RELEASE WITH PECL IN UNIX
-```
-pecl install runkit
-```
-
-## BUILDING AND INSTALLING CURRENT DEVELOPMENT VERSION IN UNIX
+## BUILDING AND INSTALLING IN UNIX
 ```
 git clone https://github.com/zenovich/runkit.git
 cd runkit

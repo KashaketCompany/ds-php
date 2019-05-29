@@ -38,7 +38,7 @@
 
 #include "Zend/zend_interfaces.h"
 
-#define PHP_RUNKIT_VERSION					"1.0.5-dev"
+#define PHP_RUNKIT_VERSION					"1.0.4"
 #define PHP_RUNKIT_SANDBOX_CLASSNAME		"Runkit_Sandbox"
 #define PHP_RUNKIT_SANDBOX_PARENT_CLASSNAME	"Runkit_Sandbox_Parent"
 
@@ -261,13 +261,6 @@ int php_runkit_fetch_interface(const char *classname, int classname_len, zend_cl
 #define PHP_RUNKIT_HASH_KEY(hash_key)			((hash_key)->arKey)
 #define PHP_RUNKIT_HASH_KEYLEN(hash_key)		((hash_key)->nKeyLength)
 #endif /* Version Agnosticism */
-
-/* Ignore leading "\" for namespaced functions and classes. */
-#define PHP_RUNKIT_NORMALIZE_NAMESPACE(name) \
-	if (name[0] == '\\') { \
-		name++; \
-		name##_len--; \
-	}
 
 #define PHP_RUNKIT_MAKE_LOWERCASE_COPY(name) \
 	name##_lower = estrndup(name, name##_len); \
